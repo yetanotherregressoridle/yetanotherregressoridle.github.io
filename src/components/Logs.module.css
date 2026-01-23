@@ -1,0 +1,19 @@
+.log_content {
+    flex: 1;
+    overflow-y: auto;
+    text-align: left;
+    background: var(--section-bg);
+    padding: 4px;
+}
+
+.log_content>div {
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9em;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.log_content>div:nth-of-type(odd) {
+    background-color: var(--section-bg-hover);
+}

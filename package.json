@@ -1,0 +1,30 @@
+{
+  "name": "vite-template-solid",
+  "homepage": "yetanotherregressoridle.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "vitest --run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-dsv": "^3.0.5",
+    "happy-dom": "^20.3.7",
+    "solid-devtools": "^0.34.3",
+    "typescript": "^5.7.2",
+    "vite": "^7.1.4",
+    "vite-plugin-solid": "^2.11.8",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "solid-js": "^1.9.5"
+  }
+}

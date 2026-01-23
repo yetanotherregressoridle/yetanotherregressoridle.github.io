@@ -1,0 +1,108 @@
+.actionContainer {
+    width: 100%;
+}
+
+.action {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--section-bg) 0%, var(--section-bg-hover) 100%);
+    color: var(--text-color);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-align: left;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.action:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-primary);
+}
+
+.action:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: var(--section-bg);
+    filter: grayscale(0.8);
+    transform: none;
+    box-shadow: none;
+}
+
+.actionContent {
+    width: 100%;
+}
+
+.actionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggleButton {
+    background: var(--section-bg-hover);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    font-weight: 500;
+}
+
+.toggleButton:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+.expandedDetails {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+    animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.flavorText {
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin: 5px 0;
+}
+
+.prerequisites {
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+
+.prerequisites strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.prerequisites ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.prerequisites li {
+    margin: 3px 0;
+}
